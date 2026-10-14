@@ -1,10 +1,26 @@
 import Link from "next/link";
 
 const services = [
-  "Websites & commerce",
-  "Web applications",
-  "Growth systems",
-  "AI & automation",
+  {
+    title: "Websites & digital experiences",
+    description:
+      "Websites, e-commerce, web applications, portals and booking flows—designed for mobile-first journeys, regional languages and UPI where they fit.",
+  },
+  {
+    title: "AI reception & automation",
+    description:
+      "Voice and chat receptionists that answer, qualify, route and book enquiries, alongside automation for repeatable workflows.",
+  },
+  {
+    title: "Marketing & growth",
+    description:
+      "SEO, paid ads, social and email campaigns, supported by analytics and clear reporting.",
+  },
+  {
+    title: "Integrations & support",
+    description:
+      "CRM and other integrations, useful dashboards, ongoing maintenance and technical support.",
+  },
 ];
 
 export default function Home() {
@@ -36,7 +52,7 @@ export default function Home() {
         <div>
           <p className="mb-7 flex items-center gap-3 text-[11px] font-medium tracking-[0.18em] text-[#746d64]">
             <span className="h-2 w-2 rounded-full bg-[#628467]" />
-            DIGITAL PARTNER · INDIA
+            DIGITAL PARTNER · INDIA & BEYOND
           </p>
 
           <h1 className="max-w-2xl text-5xl font-semibold leading-[1.02] tracking-[-0.06em] sm:text-6xl md:text-7xl">
@@ -45,9 +61,9 @@ export default function Home() {
           </h1>
 
           <p className="mt-7 max-w-lg text-base leading-7 text-[#686159] md:text-lg">
-            We build mobile-first websites, useful digital products and growth
-            systems for ambitious Indian businesses—made for local customers
-            and ready to scale anywhere.
+            We work with ambitious businesses in India and across global
+            markets, building digital experiences and growth systems for
+            mobile-first journeys, regional languages and UPI where they fit.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-6">
@@ -64,7 +80,7 @@ export default function Home() {
 
           <div className="mt-14 flex gap-8 border-t border-black/10 pt-5 text-xs leading-5 text-[#746d64]">
             <p>Thoughtful work.<br />Clear communication.</p>
-            <p>Built for India.<br />Ready for anywhere.</p>
+            <p>India-aware.<br />Globally minded.</p>
           </div>
         </div>
 
@@ -101,13 +117,13 @@ export default function Home() {
           <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((service, index) => (
               <a
-                key={service}
+                key={service.title}
               href="/contact"
                 className="border border-black/10 p-5 transition hover:-translate-y-1 hover:bg-[#f5f2eb]"
               >
                 <span className="text-xs text-[#d83929]">0{index + 1}</span>
-                <h3 className="mt-8 text-lg font-semibold">{service}</h3>
-                <p className="mt-3 text-sm text-[#746d64]">Explore what we can make possible ↗</p>
+                <h3 className="mt-8 text-lg font-semibold">{service.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#746d64]">{service.description}</p>
               </a>
             ))}
           </div>
@@ -173,7 +189,7 @@ export default function Home() {
             </span>
           </div>
           <p className="mt-4 text-sm font-semibold">Made close to home.</p>
-          <p className="mt-1 text-[10px] text-[#746d64]">A storefront concept for India</p>
+          <p className="mt-1 text-[10px] text-[#746d64]">Independent storefront concept study</p>
         </div>
         <span className="absolute bottom-5 right-5 rounded-full bg-[#24211f] px-4 py-3 text-center text-[9px] leading-4 tracking-wider text-white">
           CONCEPT
@@ -288,7 +304,7 @@ export default function Home() {
 
   <div className="mx-auto flex max-w-7xl flex-col gap-2 pt-5 text-[10px] text-white/45 sm:flex-row sm:justify-between">
     <span>© 2026 Ethixweb India</span>
-    <span>Built for the way India does business.</span>
+    <span>India-aware work for a global operating context.</span>
   </div>
 </footer>
     </main>

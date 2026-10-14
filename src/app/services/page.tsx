@@ -4,37 +4,53 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Websites, commerce, web applications, growth systems, and practical AI automation for ambitious businesses in India.",
+    "Websites and digital experiences, AI reception and automation, marketing and growth, plus integrations and support for businesses in India and global markets.",
 };
 
 const services = [
   {
     number: "01",
-    title: "Websites & commerce",
+    title: "Websites & digital experiences",
     description:
-      "Fast, thoughtful websites that help Indian customers understand your business and take the next step.",
-    details: ["Brand-led design", "Mobile-first performance", "UPI-ready commerce journeys"],
+      "Mobile-first digital experiences that make it easier for people to discover your business, complete a task and get the support they need, with regional-language and UPI journeys where they fit.",
+    details: [
+      "Websites and e-commerce",
+      "Web applications and customer portals",
+      "Booking flows and UPI-ready journeys",
+    ],
   },
   {
     number: "02",
-    title: "Web applications",
+    title: "AI reception & automation",
     description:
-      "Useful digital products that make complex workflows simpler for your team and customers across devices.",
-    details: ["Customer portals", "Dashboards and tools", "Booking flows and integrations"],
+      "AI voice and chat receptionists can answer, qualify, route and book enquiries, with people kept in control of the experience.",
+    details: [
+      "Voice and chat enquiry handling",
+      "Lead qualification, routing and booking",
+      "Workflow automation",
+    ],
   },
   {
     number: "03",
-    title: "Growth systems",
+    title: "Marketing & growth",
     description:
-      "Connected marketing and measurement that show what is working across local and national markets.",
-    details: ["Local and national search", "Paid campaign strategy", "Content and analytics"],
+      "Campaigns and measurement to help you reach the right audiences and understand activity across India and global markets.",
+    details: [
+      "SEO and paid advertising",
+      "Social and email campaigns",
+      "Analytics and reporting",
+    ],
   },
   {
     number: "04",
-    title: "AI & automation",
+    title: "Integrations & support",
     description:
-      "Practical automation that reduces repetitive work while keeping people in control of the customer experience.",
-    details: ["Workflow automation", "AI assistants with human handoff", "Data connections"],
+      "Connected systems and ongoing technical care to keep your day-to-day tools useful and working together.",
+    details: [
+      "CRM and other integrations",
+      "Dashboards",
+      "Maintenance and technical support",
+    ],
   },
 ];
 
