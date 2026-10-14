@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -7,5 +8,11 @@ export const metadata: Metadata = {
 };
 
 export default function ContactLayout({ children }: LayoutProps<"/contact">) {
-  return children;
+  return (
+    <>
+      <SiteHeader active="contact" />
+      {children}
+      <SiteFooter />
+    </>
+  );
 }
