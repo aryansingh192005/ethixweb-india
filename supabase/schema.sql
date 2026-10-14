@@ -36,6 +36,9 @@ create table if not exists public.rate_limit_windows (
   request_count integer not null check (request_count > 0)
 );
 
+create index if not exists rate_limit_window_started_at_idx
+  on public.rate_limit_windows (window_started_at);
+
 alter table public.rate_limit_windows enable row level security;
 revoke all on table public.rate_limit_windows from public, anon, authenticated;
 revoke all on table public.rate_limit_windows from service_role;

@@ -43,8 +43,9 @@ const principles = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f5f2eb] text-[#24211f]">
+    <>
       <SiteHeader />
+      <main id="main-content" className="min-h-screen bg-[#f5f2eb] text-[#24211f]">
 
       <section className="relative overflow-hidden border-b border-black/10">
         <div className="mx-auto grid max-w-[1440px] gap-12 px-5 py-14 sm:px-8 sm:py-20 md:grid-cols-[1fr_0.92fr] md:items-center md:gap-14 md:px-12 md:py-24 lg:gap-20 lg:py-28">
@@ -190,7 +191,8 @@ export default function Home() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

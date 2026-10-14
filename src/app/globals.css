@@ -39,6 +39,24 @@ body {
   outline-offset: 3px;
 }
 
+.skip-link {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 60;
+  transform: translateY(-180%);
+  background: #24211f;
+  padding: 0.75rem 1rem;
+  color: #fffdf8;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .sunrise-grid {
   background-image: linear-gradient(rgb(255 255 255 / 12%) 1px, transparent 1px),
     linear-gradient(90deg, rgb(255 255 255 / 12%) 1px, transparent 1px);

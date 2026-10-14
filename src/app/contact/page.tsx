@@ -42,7 +42,7 @@ export default function ContactPage() {
 }
 
   return (
-    <main className="min-h-screen bg-[#f5f2eb] text-[#24211f]">
+    <main id="main-content" className="min-h-screen bg-[#f5f2eb] text-[#24211f]">
       <section className="mx-auto grid max-w-[1440px] gap-10 px-5 py-12 sm:px-8 md:grid-cols-[0.85fr_1.15fr] md:gap-14 md:px-12 md:py-20 lg:gap-20">
         <div>
           <p className="text-[10px] font-medium tracking-[0.18em] text-[#746d64]">
@@ -75,6 +75,7 @@ export default function ContactPage() {
 
         <form
           onSubmit={handleSubmit}
+          aria-busy={sending}
           className="border border-black/[0.06] bg-[#fffdf8] p-5 shadow-[0_18px_55px_-42px_rgba(36,33,31,0.55)] sm:p-7 md:p-9"
         >
           <div className="grid gap-5 sm:grid-cols-2">
@@ -87,7 +88,7 @@ export default function ContactPage() {
                 maxLength={100}
                 autoComplete="name"
                 placeholder="Aarav Mehta"
-                className="mt-2 w-full border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
+                className="mt-2 w-full border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none placeholder:text-[#746d64] transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
               />
             </label>
 
@@ -100,7 +101,7 @@ export default function ContactPage() {
                 maxLength={254}
                 autoComplete="email"
                 placeholder="you@company.in"
-                className="mt-2 w-full border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
+                className="mt-2 w-full border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none placeholder:text-[#746d64] transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
               />
             </label>
 
@@ -112,7 +113,7 @@ export default function ContactPage() {
                 maxLength={20}
                 autoComplete="tel"
                 placeholder="+91 98765 43210"
-                className="mt-2 w-full border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
+                className="mt-2 w-full border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none placeholder:text-[#746d64] transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
               />
             </label>
 
@@ -143,7 +144,7 @@ export default function ContactPage() {
               maxLength={3000}
               rows={5}
               placeholder="What are you building, and what would success look like?"
-              className="mt-2 w-full resize-y border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
+              className="mt-2 w-full resize-y border border-black/15 bg-[#f9f7f2] px-3 py-3 text-sm font-normal outline-none placeholder:text-[#746d64] transition focus:border-[#c53a2c] focus-visible:ring-2 focus-visible:ring-[#c53a2c]/25"
             />
           </label>
 

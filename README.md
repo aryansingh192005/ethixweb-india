@@ -35,7 +35,7 @@ This concept gives the India edition a clearer path from the value proposition t
 Use Node.js 20.9 or later. Install dependencies and start the development server:
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 

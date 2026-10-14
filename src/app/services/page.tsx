@@ -1,12 +1,12 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "Websites and digital experiences, AI reception and automation, marketing and growth, plus integrations and support for businesses in India and global markets.",
-};
+export const metadata = pageMetadata(
+  "Services",
+  "Websites and digital experiences, AI reception and automation, marketing and growth, plus integrations and support for businesses in India and global markets.",
+  "/services"
+);
 
 const services = [
   {
@@ -57,8 +57,9 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-[#f5f2eb] text-[#24211f]">
+    <>
       <SiteHeader active="services" />
+      <main id="main-content" className="min-h-screen bg-[#f5f2eb] text-[#24211f]">
 
       <section className="bg-[#fffdf8] px-5 py-16 sm:px-8 md:px-12 md:py-24">
         <div className="mx-auto max-w-[1440px]">
@@ -129,7 +130,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      </main>
       <SiteFooter />
-    </main>
+    </>
   );
 }

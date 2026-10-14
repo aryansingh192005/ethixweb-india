@@ -11,6 +11,7 @@ const links: { href: string; label: string; page: ActivePage }[] = [
 export function SiteHeader({ active }: { active?: ActivePage }) {
   return (
     <header className="sticky top-0 z-40 border-b border-black/10 bg-[#f5f2eb]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#f5f2eb]/80">
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-x-6 gap-y-3 px-5 py-3.5 sm:px-8 md:flex-nowrap md:px-12 md:py-4">
         <Link
           href="/"
@@ -75,7 +76,7 @@ export function SiteFooter() {
           <Link className="transition-colors hover:text-white" href="/contact">Contact</Link>
         </nav>
       </div>
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-2 pt-5 text-[10px] tracking-wide text-white/40 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-2 pt-5 text-[10px] tracking-wide text-white/65 sm:flex-row sm:items-center sm:justify-between">
         <span>© 2026 Ethixweb India</span>
         <span>India-aware by design. Ready to work across markets.</span>
       </div>
